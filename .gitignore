@@ -1,0 +1,5 @@
+# Ignore test.py
+test.py
+
+# Ignore data folder
+/pytorch/data
