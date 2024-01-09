@@ -3,3 +3,9 @@ test.py
 
 # Ignore data folder
 /pytorch/data
+
+# Ignore model folder
+/pytorch/model
+
+# Ignore runs folder
+/pytorch/runs
