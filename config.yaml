@@ -1,0 +1,5 @@
+paths:
+  data: ../data/fiveK
+  train: ../data/fiveK/train-list-subset.txt
+  test: ../data/fiveK/test-list-subset.txt
+  checkpoints: ../model/checkpoints

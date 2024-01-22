@@ -9,3 +9,6 @@ test.py
 
 # Ignore runs folder
 /pytorch/runs
+
+# Ignore config-colab.yml
+config-colab.yaml
