@@ -2,4 +2,25 @@ paths:
   data: ../data/fiveK
   train: ../data/fiveK/train-list-subset.txt
   test: ../data/fiveK/test-list-subset.txt
-  checkpoints: ../model/checkpoints
+  checkpoints: ../model/checkpoints/resetnet50_scratch
+model:
+  #  name could be one of the following:
+  # 1. resnet18
+  # 2. resnet34
+  # 3. resnet50
+  name: resnet50
+  # type could be one of the following:
+  # 1. FINE_TUNE: fine-tune the model
+  # 2. FEATURE_EXTRACTOR: use the model as a feature extractor
+  # 3. TRAIN_FROM_SCRATCH : train the model from scratch
+  type: TRAIN_FROM_SCRATCH
+  num_classes: 5
+  lr: 0.1
+  momentum: 0.9
+  num_epochs: 1
+  
+
+
+
+
+
