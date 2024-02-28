@@ -2,7 +2,7 @@ paths:
   data: ../data/fiveK
   train: ../data/fiveK/train-list-subset.txt
   test: ../data/fiveK/test-list-subset.txt
-  checkpoints: ../model/checkpoints/resetnet50_scratch
+  checkpoints: ../model/checkpoints/resetnet50_scratch_raw
 model:
   #  name could be one of the following:
   # 1. resnet18
