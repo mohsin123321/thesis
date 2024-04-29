@@ -1,8 +1,9 @@
 paths:
   data: ../data/fiveK
   train: ../data/fiveK/train-list-subset.txt
-  test: ../data/fiveK/test-list-subset.txt
-  checkpoints: ../model/checkpoints/resetnet50_scratch_raw
+  test: ../data/fiveK/test-list-grad-cam.txt
+  checkpoints: ../model/checkpoints/resetnet50_scratch
+  unetcheckpoints: ../model/checkpoints/unet
 model:
   #  name could be one of the following:
   # 1. resnet18
@@ -18,8 +19,12 @@ model:
   lr: 0.1
   momentum: 0.9
   num_epochs: 1
-  
-
+unetmodel:
+  loss: mse
+  depth: 3
+  lr: 0.01
+  num_classes: 5
+  num_epochs: 1
 
 
 
