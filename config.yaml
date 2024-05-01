@@ -3,7 +3,7 @@ paths:
   train: ../data/fiveK/train-list-subset.txt
   test: ../data/fiveK/test-list-grad-cam.txt
   checkpoints: ../model/checkpoints/resetnet50_scratch
-  unetcheckpoints: ../model/checkpoints/unet
+  unetcheckpoints: ../model/checkpoints/unet_mse_3
 model:
   #  name could be one of the following:
   # 1. resnet18
