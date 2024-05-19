@@ -2,8 +2,8 @@ paths:
   data: ../data/fiveK
   train: ../data/fiveK/train-list-subset.txt
   test: ../data/fiveK/test-list-grad-cam.txt
-  checkpoints: ../model/checkpoints/resetnet50_scratch
-  unetcheckpoints: ../model/checkpoints/unet_mse_3
+  checkpoints: ../model/checkpoints/resetnet50_feature_extractor
+  unetcheckpoints: ../model/checkpoints/unet_two_classes_bs_32_0.01_instance
 model:
   #  name could be one of the following:
   # 1. resnet18
@@ -14,7 +14,7 @@ model:
   # 1. FINE_TUNE: fine-tune the model
   # 2. FEATURE_EXTRACTOR: use the model as a feature extractor
   # 3. TRAIN_FROM_SCRATCH : train the model from scratch
-  type: TRAIN_FROM_SCRATCH
+  type: FEATURE_EXTRACTOR
   num_classes: 5
   lr: 0.1
   momentum: 0.9
