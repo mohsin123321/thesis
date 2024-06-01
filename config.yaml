@@ -3,7 +3,7 @@ paths:
   train: ../data/fiveK/train-list-subset.txt
   test: ../data/fiveK/test-list-grad-cam.txt
   checkpoints: ../model/checkpoints/resetnet50_feature_extractor
-  unetcheckpoints: ../model/checkpoints/unet_two_classes_bs_32_0.01_instance
+  unetcheckpoints: ../model/checkpoints/unet_two_classes_contrastive
 model:
   #  name could be one of the following:
   # 1. resnet18
@@ -25,6 +25,7 @@ unetmodel:
   lr: 0.01
   num_classes: 5
   num_epochs: 1
+  contrastive_lambda: 0.001
 
 
 
