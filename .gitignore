@@ -12,3 +12,6 @@ test.py
 
 # Ignore config-colab.yml
 config-colab.yaml
+
+# Ignore vscode folder
+.vscode
